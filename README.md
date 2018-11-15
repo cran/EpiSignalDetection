@@ -1,4 +1,6 @@
-# '_EpiSignalDetection_' package
+'_EpiSignalDetection_' package
+===================================
+
 European Centre for Disease Prevention and Control (ECDC)
 
 

@@ -1,10 +1,11 @@
-4390e25a8e6434cf8b14ae82d95a5251 *DESCRIPTION
+669ede6d6e49031611983ff7a51ece4b *DESCRIPTION
 cf1ae98c6a5e6d7c075db96662d513c6 *NAMESPACE
+43d63b3967bb0a297a4c2177eaed0ef5 *NEWS.md
 6eb81a92177676dc325498b8fd94eb7d *R/data.R
 6bd3ac0adae6215dd5fdceb43385eeac *R/internal_functions.R
 97fc6b30d615ba2391fe016da258b919 *R/runEpiSDApp.R
-c8ba1ce07e0efad810c81b7f66d1be0c *R/runEpiSDReport.R
-5e296e47209aaa5a1e3afff33565b047 *README.md
+07cc2ea88ae606bb8460e82ae0469003 *R/runEpiSDReport.R
+bfbf997c555b8e53dd0a0e6ec46fa2f8 *README.md
 cc54dd82751bc155e4e7a85b58a6ccad *build/vignette.rds
 736e5c291d17f217c553d25da2bf483e *data/AlgoParam.RData
 14d1c239832a8aa7d323a1a2f13a5783 *data/SignalData.RData
@@ -13,7 +14,7 @@ aa561bc59d77fdfa5b4e51cc96d11809 *inst/SignalDetectionApp/server.R
 69c5f87fa843c1058b86bbe1aebb388d *inst/SignalDetectionApp/ui.R
 8b08c50643c7c47de697aacfebfb2811 *inst/SignalDetectionApp/www/desktop.ini
 54486450fde24c37c15aff5e302485f7 *inst/SignalDetectionApp/www/ecdc.png
-dcfa73779724d44b2c7225a26c7f5448 *inst/SignalDetectionReport_HTML/SignalDetectionReport.Rmd
+fe5af4b0a9ee9355d0753e15e1c51ea7 *inst/SignalDetectionReport_HTML/SignalDetectionReport.Rmd
 d896019fd805020101b3692293b3aa5a *inst/SignalDetectionReport_HTML/style.css
 df8174407b8afc644f3a8bd72c2f66c9 *inst/SignalDetectionReport_HTML/subsection.Rmd
 4b0f326774be822c77fd53d84c4895a7 *inst/StratifiedSignalDetectionReport_HTML/StratifiedSignalDetectionReport.Rmd
@@ -21,7 +22,7 @@ d896019fd805020101b3692293b3aa5a *inst/StratifiedSignalDetectionReport_HTML/styl
 f137b99a6a1f36615128bfdbc0f6d780 *inst/StratifiedSignalDetectionReport_HTML/subsection.Rmd
 16c83f0ff52165bdff6dfb70c26a6ffb *inst/doc/EpiSignalDetection_Vignette.R
 8e6523e69c37a56cc056228616e38e5f *inst/doc/EpiSignalDetection_Vignette.Rmd
-8efe583fb86ff63037ac09021aacaa9c *inst/doc/EpiSignalDetection_Vignette.html
+c4f0d16ff25f2160789d866bb7c21689 *inst/doc/EpiSignalDetection_Vignette.html
 e7a4ce514f68b6e8afd245254129b71c *man/AlgoParam.Rd
 44b3e15c47c9d47d1eef385f7b6a002f *man/SignalData.Rd
 8896ae015b70375529e45209352e454a *man/aggAtlasExport.Rd

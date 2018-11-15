@@ -1,7 +1,7 @@
 Package: EpiSignalDetection
 Type: Package
 Title: Signal Detection Analysis
-Version: 0.1.0
+Version: 0.1.1
 Date: 2018-10-29
 Authors@R: c( 
   person( given = "Lore", family = "Merdrignac", 
@@ -36,7 +36,7 @@ Imports: shiny, dplyr, pander, DT, surveillance, ISOweek, ggplot2,
 VignetteBuilder: knitr
 URL: http://atlas.ecdc.europa.eu/public/index.aspx
 NeedsCompilation: no
-Packaged: 2018-11-05 11:02:59 UTC; LMC
+Packaged: 2018-11-15 19:21:17 UTC; LMC
 Author: Lore Merdrignac [aut, ctr] (Author of the package and original code),
   Joana Gomes Dias [aut, fnd, cre] (Project manager and package
     maintainer),
@@ -45,4 +45,4 @@ Author: Lore Merdrignac [aut, ctr] (Author of the package and original code),
   Margot Einoder-Moreno [ctb, fnd]
 Maintainer: Joana Gomes Dias <joana.gomes.dias@ecdc.europa.eu>
 Repository: CRAN
-Date/Publication: 2018-11-14 11:10:12 UTC
+Date/Publication: 2018-11-15 22:00:04 UTC

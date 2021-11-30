@@ -1,10 +1,10 @@
-## ----setup, include = FALSE----------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ---- echo = FALSE-------------------------------------------------------
+## ---- echo = FALSE------------------------------------------------------------
 pkgVersion <- packageDescription("EpiSignalDetection")$Version
 pkgDate <- packageDescription("EpiSignalDetection")$Date
 authorsString <- gsub("^ *|(?<= ) |\n| *$", "", 
@@ -18,12 +18,12 @@ pkgMaintainer <- packageDescription("EpiSignalDetection")$Maintainer
 pkgLicense <- packageDescription("EpiSignalDetection")$License
 pkgUrl <- packageDescription("EpiSignalDetection")$URL
 
-## ---- eval=FALSE, echo=TRUE----------------------------------------------
+## ---- eval=FALSE, echo=TRUE---------------------------------------------------
 #  install.packages("EpiSignalDetection")
 #  library(EpiSignalDetection)
 #  EpiSignalDetection::runEpiSDApp()
 
-## ---- echo=FALSE, results='asis'-----------------------------------------
+## ---- echo=FALSE, results='asis'----------------------------------------------
 my_dataset <- EpiSignalDetection::importAtlasExport("./data/ECDC_surveillance_data_Pertussis_20180717.csv")
 knitr::kable(head(my_dataset), 
              format = "html", table.attr = 'class="myTable"',
@@ -31,7 +31,7 @@ knitr::kable(head(my_dataset),
              align = 'c',
              caption = "__Tab.1 Example of Pertussis data exported from the ECDC Atlas__")
 
-## ---- echo=FALSE, results='asis'-----------------------------------------
+## ---- echo=FALSE, results='asis'----------------------------------------------
 my_dataset <- EpiSignalDetection::SignalData
 my_dataset <- dplyr::filter(my_dataset, my_dataset$HealthTopic == "Salmonellosis")
 my_dataset <- dplyr::group_by_(my_dataset, c("Population") )
@@ -44,11 +44,11 @@ knitr::kable(my_dataset,
              align = 'c',
              caption = "__Tab.2 Number of cases in each stratum using Salmonellosis data exported from the ECDC Atlas__")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_parameters <- EpiSignalDetection::AlgoParam
 names(my_parameters)
 
-## ---- echo = FALSE-------------------------------------------------------
+## ---- echo = FALSE------------------------------------------------------------
 knitr::kable(my_parameters$FarringtonFlexible, 
              format = "html", table.attr = 'class="myTable"',
              format.args = list(decimal.mark = ".", big.mark = ","),
@@ -60,7 +60,7 @@ knitr::kable(my_parameters$GLRNB,
              align = 'c',
              caption = "__Tab.4 Parameters for the GLRNB algorithm__")
 
-## ---- echo = FALSE, results = 'hide'-------------------------------------
+## ---- echo = FALSE, results = 'hide'------------------------------------------
 my_input <- list(
   disease = "Salmonellosis",
   country = "EU-EEA - complete series",
@@ -76,11 +76,11 @@ png(file = "plots/plot_time_series.png", width = 1450, height = 500, res=90)
 EpiSignalDetection::plotSD(input = my_input)
 dev.off()
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_dataset <- EpiSignalDetection::SignalData
 knitr::kable(head(my_dataset))
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_input <- list(
   disease = "Salmonellosis",
   country = "EU-EEA - complete series",
@@ -92,21 +92,21 @@ my_input <- list(
   testingperiod = 5
 )
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  EpiSignalDetection::plotSD(input = my_input)
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  EpiSignalDetection::runEpiSDReport(
 #    outputfile = "C:/R/test.html",
 #    input = my_input)
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  EpiSignalDetection::runEpiSDReport(
 #    outputfile = "C:/R/test.html",
 #    input = my_input,
 #    stratified = TRUE)
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  EpiSignalDetection::runEpiSDReport()
 #  [1] "Dataset (please enter the full path to the csv file, or just press 'Enter' to use the default dataset)"
 #  1:
@@ -116,13 +116,13 @@ my_input <- list(
 #  Read 1 item
 #  [1] "Region name (e.g. EU-EEA - complete series):"
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_dataset <- EpiSignalDetection::importAtlasExport("./data/ECDC_surveillance_data_Pertussis_20180717.csv")
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_dataset <- EpiSignalDetection::cleanAtlasExport(my_dataset)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_input <- list(
   disease = "Pertussis",
   country = "EU-EEA - complete series",
@@ -134,21 +134,21 @@ my_input <- list(
   testingperiod = 6
 )
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_dataset <- EpiSignalDetection::filterAtlasExport(my_dataset, my_input)
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 my_dataset <- EpiSignalDetection::aggAtlasExport(my_dataset, my_input)
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  EpiSignalDetection::plotSD(x = my_dataset, input = my_input)
 
-## ---- echo = FALSE, results = 'hide'-------------------------------------
+## ---- echo = FALSE, results = 'hide'------------------------------------------
 png(file = "plots/plot_time_series_external.png", width = 1450, height = 500, res=90)
 EpiSignalDetection::plotSD(x = my_dataset, input = my_input)
 dev.off()
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  my_input <- list(
 #    file = list(datapath = "C:/data/ECDC_surveillance_data_Pertussis_20180717.csv"),
 #    disease = "Pertussis",
@@ -163,7 +163,7 @@ dev.off()
 #  
 #  EpiSignalDetection::runEpiSDReport(input = my_input)
 
-## ---- eval = FALSE-------------------------------------------------------
+## ---- eval = FALSE------------------------------------------------------------
 #  my_input <- list(
 #    file = list(datapath = "C:/data/ECDC_surveillance_data_Salmonella_20180717.csv"),
 #    disease = "Salmonellosis",

@@ -4,7 +4,8 @@
 \name{AlgoParam}
 \alias{AlgoParam}
 \title{List of datasets containing the Farrington Flexible and GLRNB default parameters by time unit}
-\format{A list of 2 dataframes: one with 2 rows and 9 variables and GRLNB with 2 rows and 8 variables
+\format{
+A list of 2 dataframes: one with 2 rows and 9 variables and GRLNB with 2 rows and 8 variables
 \enumerate{
 \item \strong{Default parameters for FarringtonFlexible algorithm}
 \describe{
@@ -51,7 +52,8 @@
   - Change=intercept for both weeks and months}
 }
 
-}}
+}
+}
 \usage{
 AlgoParam
 }

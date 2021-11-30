@@ -24,7 +24,7 @@ e.g. "ECDC_surveillance_data_Anthrax.csv" \cr
 The function will interpret missing reports '-' as NA values
 }
 \examples{
-\donttest{
+\dontrun{
 dataset <- importAtlasExport(x = 'ECDC_surveillance_data_Anthrax.csv')
 }
 

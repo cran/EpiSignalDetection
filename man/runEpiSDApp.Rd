@@ -20,9 +20,9 @@ Datasets to use in the tool:
     \item  --> An export (csv format) from the ECDC Surveillance Atlas of Infectious Diseases:
      \href{http://atlas.ecdc.europa.eu/public/index.aspx}{http://atlas.ecdc.europa.eu/public/index.aspx}.
 
-On the ECDC "Surveillance Atlas of Infectious Diseases" web site:
+     On the ECDC "Surveillance Atlas of Infectious Diseases" web site:
 
-\itemize{
+    \itemize{
       \item{1-} Choose the disease/health topic to analyse
       \item{2-} Export the data (csv) using the default settings
       \item{3-} Import the csv in the application
@@ -33,7 +33,7 @@ On the ECDC "Surveillance Atlas of Infectious Diseases" web site:
 }
 }
 \examples{
-\donttest{
+\dontrun{
 # --- Run the 'shiny' app
 # --- (NB: please open the app in an external browser
 # --- in order to facilitate its use)

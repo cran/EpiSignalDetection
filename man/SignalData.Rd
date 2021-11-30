@@ -4,7 +4,8 @@
 \name{SignalData}
 \alias{SignalData}
 \title{Dataset for Signal Detection Analysis, reported cases, 1999-2018 (ECDC Atlas export)}
-\format{A data frame with 80,834 rows and 11 variables:
+\format{
+A data frame with 80,834 rows and 11 variables:
 \describe{
   \item{HealthTopic}{Disease name e.g. Salmonellosis or Measles}
   \item{Population}{Population characteristics e.g. All cases, Confirmed cases, Serotype AGONA,
@@ -20,7 +21,8 @@
   \item{TimeWeek}{Week of the date available in the 'Time' variable, regardless of the date format
   i.e. NA since this dataset does not include any weekly data}
   \item{TimeDate}{Approximated date corresponding to the date available in the 'Time' variable  (daily format)}
-}}
+}
+}
 \source{
 \url{http://atlas.ecdc.europa.eu/public/index.aspx}
 }

@@ -146,7 +146,7 @@ country(ies) reporting at least 1 case in the signal detection period.
 if(input$country == "EU-EEA - complete series") {
   
   datasetByCountry <- datasetTP %>%
-    dplyr::group_by_( c("RegionName") ) %>%
+    dplyr::group_by(RegionName) %>%
     dplyr::summarise( NumValue = sum(NumValue)  ) %>%
     dplyr::ungroup()
  
@@ -193,7 +193,7 @@ Result <- data.frame( Time = "" ,
 #-- Creation of a EU/EEA
 if(input$country == "EU-EEA - complete series"){
   datasetEU <- dataset %>%
-    dplyr::group_by_( c("StudyPeriod") ) %>%
+    dplyr::group_by(StudyPeriod) %>%
     dplyr::summarise( NumValue = sum(NumValue)  ) %>%
     dplyr::ungroup()
   datasetEU <- data.frame(RegionName = "EU-EEA - complete series", datasetEU)

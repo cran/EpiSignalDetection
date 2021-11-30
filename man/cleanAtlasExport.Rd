@@ -30,7 +30,7 @@ The function will: \cr
 }
 }
 \examples{
-\donttest{
+\dontrun{
 dataset <- cleanAtlasExport( importAtlasExport(x = 'ECDC_surveillance_data_Anthrax.csv') )
 }
 

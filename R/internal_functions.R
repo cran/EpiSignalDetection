@@ -19,7 +19,7 @@
 #' @usage importAtlasExport(x)
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' dataset <- importAtlasExport(x = 'ECDC_surveillance_data_Anthrax.csv')
 #' }
 #'
@@ -70,7 +70,7 @@ importAtlasExport <- function(x) {
 #' @seealso \code{\link{importAtlasExport}} \code{\link{filterAtlasExport}}
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' dataset <- cleanAtlasExport( importAtlasExport(x = 'ECDC_surveillance_data_Anthrax.csv') )
 #' }
 #'
